@@ -1,1 +1,39 @@
 # ten-thousand
+## LAB - Class 06
+## Project: ten-thousand
+## Author: Tala Asfan / Saif Obeidat
+Links 
+[Pull Request Link]()
+
+### Setup
+
+- Create venv 
+```
+python3 -m venv .venv
+``` 
+- Activate venv file 
+```
+source .venv/bin/activate
+```
+- install requirements
+```
+pip freeze > requirements.txt
+```
+
+
+### How to initialize/run your application (where applicable)
+
+-
+ ```
+python ten_thousand/game_logic.py
+```
+
+
+### Tests
+
+- How do you run tests? 
+
+```
+pip install pytest
+```
+pytest
