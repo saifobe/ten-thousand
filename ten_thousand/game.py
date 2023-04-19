@@ -52,7 +52,7 @@ def start_game(round_num=1, total=0, number_dices=6):
 
         for i in dice_to_keep:
             if i not in roll_to_test_cheater:
-                print("""********************************************\n********************************************\n***************  DON'T CHEAT  **************\n********************************************\n********************************************\n                TRY AGAIN   """)
+                print("DON'T CHEAT")
                 return start_game(round_num, total, number_dices=6)
             index = roll_to_test_cheater.index(i)
             roll_to_test_cheater.pop(index)
