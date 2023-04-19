@@ -3,7 +3,7 @@
 ## Project: ten-thousand
 ## Author: Tala Asfan / Saif Obeidat
 Links 
-[Pull Request Link](https://github.com/saifobe/ten-thousand/pull/1)
+[Pull Request Link](https://github.com/saifobe/ten-thousand/pull/2)
 
 ### Setup
 
