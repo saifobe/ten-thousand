@@ -1,5 +1,5 @@
 # ten-thousand
-## LAB - Class 06
+## LAB - Class 07
 ## Project: ten-thousand
 ## Author: Tala Asfan / Saif Obeidat
 Links 
