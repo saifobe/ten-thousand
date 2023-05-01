@@ -136,3 +136,6 @@ class Game:
 def play(roller=GameLogic.roll_dice):
     game = Game(roller)
     game.start_game()
+
+if __name__ == "__main__":
+    play()
