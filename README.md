@@ -1,9 +1,9 @@
 # ten-thousand
-## LAB - Class 06
+## LAB - Class 07
 ## Project: ten-thousand
 ## Author: Tala Asfan / Saif Obeidat
 Links 
-[Pull Request Link](https://github.com/saifobe/ten-thousand/pull/1)
+[Pull Request Link](https://github.com/saifobe/ten-thousand/pull/2)
 
 ### Setup
 
