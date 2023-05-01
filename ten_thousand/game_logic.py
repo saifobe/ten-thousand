@@ -4,6 +4,47 @@ from collections import Counter
 class GameLogic():
     def __init__(self):
         pass
+
+    @staticmethod
+    def validate_keepers(roll, keepers):
+        """
+        A function for determining if the dice a user wants to keep is valid.
+        validate_keepers(roll, keepers): Returns a boolean
+
+        """
+        roll_counter = Counter(roll)
+        keepers_counter = Counter(keepers)
+        for i in keepers_counter:
+            if keepers_counter[i] > roll_counter[i]:
+                return False
+        return True
+    
+    @staticmethod
+    
+    def get_scorers(input):
+        """
+        A function for determining the dice that are scoring.
+        get_scorers(input): Returns a tuple
+
+        """
+        
+        input_counter = Counter(input)
+        scoring_dice = []
+        if input_counter[1] >= 1 and input_counter[1] < 3:
+            scoring_dice.append(1)
+        if input_counter[5] >= 1 and input_counter[5] < 3:
+            scoring_dice.append(5)
+        if input_counter[1] == 3:
+            scoring_dice.append(1)
+        for i in range(2, 7):
+            if input_counter[i] == 3:
+                scoring_dice.append(i)
+        if len(input_counter) == 3 and all(value == 2 for value in input_counter.values()):
+            return input
+        return tuple(scoring_dice)
+    
+
+        
     @classmethod
     def calculate_score(cls,tupleroll):
         """
@@ -62,7 +103,7 @@ class GameLogic():
 
         
         if len(new_counter) == 3 and all(value == 2 for value in new_counter.values()):
-            unbanked_points += 1500
+            unbanked_points = 1500
 
         if len(new_counter) == 2 and len(set(new_counter.values())) == 1 and list(set(new_counter.values()))[0] == 3:
             unbanked_points = unbanked_points*2
@@ -79,6 +120,7 @@ class GameLogic():
 
         """
         return tuple(random.randint(1, 6) for _ in range(num_dice))
+    
     
 
 

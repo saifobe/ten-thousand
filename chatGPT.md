@@ -1,4 +1,4 @@
-My chatGBT Request 
+# My chatGBT Request 
 ```
 if new_counter[1] == 3:
             unbanked_points += 1000
@@ -83,4 +83,24 @@ chatGPT response:
 ```python
 if len(new_counter) == 3 and all(value == 2 for value in new_counter.values()):
             unbanked_points += 1500
+```
+
+### give me a function for determining the dice that are scoring.get_scorers(input): Returns a tuple
+
+### My chatGBT Request
+
+```python
+
+input_counter = Counter(input)
+        scoring_dice = []
+        if input_counter[1] >= 1 and input_counter[1] < 3:
+            scoring_dice.append(1)
+        if input_counter[5] >= 1 and input_counter[5] < 3:
+            scoring_dice.append(5)
+        if input_counter[1] == 3:
+            scoring_dice.append(1)
+        for i in range(2, 7):
+            if input_counter[i] == 3:
+                scoring_dice.append(i)
+        return tuple(scoring_dice)
 ```
